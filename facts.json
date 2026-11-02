@@ -1,20 +1,61 @@
 {
-  "name": "郑州商家事实页生成器",
-  "project_code": "ZGEO-1102",
-  "type": "browser_tool_and_search_experiment",
-  "created_at": "2026-11-02",
-  "updated_at": "2026-11-02",
-  "timezone": "Asia/Shanghai",
+  "name": "拾玖｜把想法做出来",
+  "identifier": "SHIJIU-WORKS-1102",
+  "version": "shijiu-v1",
+  "updated": "2026-11-02",
   "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/",
-  "target_city": "郑州",
-  "target_industry": null,
-  "real_merchant_connected": false,
-  "features": ["真实商家资料表单", "浏览器内预览", "静态HTML文件下载", "三层豆包搜索测试方法"],
-  "form_data_uploaded_by_tool": false,
-  "automatically_publishes_merchant_data": false,
-  "doubao_app_search_evidence": "not_tested",
-  "physical_store_address": null,
-  "public_business_phone": null,
-  "sources": ["https://www.doubao.com/legal/terms", "https://www.doubao.com/legal/privacy", "https://github.com/Fangx-AI/geo-doctor"],
-  "scope": "这是实际制作的项目工具，不是实体门店；未承诺被搜索收录或推荐。"
+  "entity_type": "personal_creator_website",
+  "creator": {
+    "name": "拾玖",
+    "alternate_name": "Violet",
+    "accounts": [
+      "https://www.xiaohongshu.com/user/profile/6a896d910000000013031804",
+      "https://www.douyin.com/user/MS4wLjABAAAA15KgB9iOTghrAlF7b2Wlw1XKliC1Hh5hCZ6iaPxSFVk_Jcx5UdcYw8ON01dJ3BWS"
+    ],
+    "account_source_date": "2026-10-24"
+  },
+  "not_a_company_or_official_center": true,
+  "content_themes": [
+    "个人思考",
+    "AI 辅助的游戏与互动网页"
+  ],
+  "works": [
+    {
+      "name": "收费站飞跃挑战 3D",
+      "version": "V0.15 实验原型",
+      "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/works/toll-flight.html",
+      "play_url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/play/toll-flight.html",
+      "limitations": "这是实验原型，未验证所有手机上的帧率和声音表现，不是已上架的商业游戏。首次载入约 13.5 MB，建议使用稳定网络。"
+    },
+    {
+      "name": "声音长出了一座城",
+      "version": "七个世界 · 第一版",
+      "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/works/sound-city.html",
+      "play_url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/play/sound-city.html",
+      "limitations": "音频仅在浏览器本地解码，不上传；不请求麦克风权限。需要支持 WebGL 和 Web Audio 的浏览器。手机性能与完整听感仍需实际体验。"
+    },
+    {
+      "name": "像素打工人：摸鱼战争",
+      "version": "七个世界 · 第一版",
+      "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/works/pixel-office.html",
+      "play_url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/play/pixel-office.html",
+      "limitations": "这是一个短回合实验小游戏，不包含真人玩家排名，也没有经过大规模好玩程度验证。默认无声，需主动开启声音。"
+    },
+    {
+      "name": "玻璃里的天气",
+      "version": "七个世界 · 第一版",
+      "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/works/weather-glass.html",
+      "play_url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/play/weather-glass.html",
+      "limitations": "玻璃与天气采用实时视觉近似，不是精确的光学或气象模拟。需要 WebGL，老设备不保证流畅。"
+    }
+  ],
+  "uses_ai_assistance": true,
+  "doubao_search_status": "not_verified",
+  "doubao_effective_samples": 0,
+  "legacy_project": {
+    "name": "郑州商家事实页生成器",
+    "identifier": "ZGEO-1102",
+    "archive": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/archive/zgeo-1102/",
+    "samples_not_transferable": true
+  }
 }

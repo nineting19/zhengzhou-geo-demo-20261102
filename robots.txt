@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://nineting19.github.io/zhengzhou-geo-demo-20261102/sitemap.xml
+# Project-path file; domain robots policy is controlled by GitHub Pages.

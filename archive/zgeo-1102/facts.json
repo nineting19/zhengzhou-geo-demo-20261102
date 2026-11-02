@@ -1,0 +1,20 @@
+{
+  "name": "郑州商家事实页生成器",
+  "project_code": "ZGEO-1102",
+  "type": "browser_tool_and_search_experiment",
+  "created_at": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "url": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/",
+  "target_city": "郑州",
+  "target_industry": null,
+  "real_merchant_connected": false,
+  "features": ["真实商家资料表单", "浏览器内预览", "静态HTML文件下载", "三层豆包搜索测试方法"],
+  "form_data_uploaded_by_tool": false,
+  "automatically_publishes_merchant_data": false,
+  "doubao_app_search_evidence": "not_tested",
+  "physical_store_address": null,
+  "public_business_phone": null,
+  "sources": ["https://www.doubao.com/legal/terms", "https://www.doubao.com/legal/privacy", "https://github.com/Fangx-AI/geo-doctor"],
+  "scope": "这是实际制作的项目工具，不是实体门店；未承诺被搜索收录或推荐。"
+}

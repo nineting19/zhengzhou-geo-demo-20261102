@@ -1,17 +1,14 @@
-# 郑州商家事实页生成器 · ZGEO-1102
+# 拾玖｜把想法做出来
 
-公开项目页： https://nineting19.github.io/zhengzhou-geo-demo-20261102/
+个人创作者拾玖（Violet）的作品与内容网站：AI 辅助小游戏、互动网页、个人思考和制作记录。
 
-这是实际制作的浏览器工具：把经营者确认的商家资料整理成可预览、可下载的静态 HTML 页面，并提供三层豆包搜索实验方法。
+公开地址：https://nineting19.github.io/zhengzhou-geo-demo-20261102/
 
-- [使用资料页生成器](https://nineting19.github.io/zhengzhou-geo-demo-20261102/#generator)
-- [项目事实与范围](https://nineting19.github.io/zhengzhou-geo-demo-20261102/project.html)
-- [豆包搜索测试方法](https://nineting19.github.io/zhengzhou-geo-demo-20261102/method.html)
+- 四件可体验作品：收费站飞跃挑战 3D、声音长出了一座城、像素打工人：摸鱼战争、玻璃里的天气。
+- 文章为本人原稿与原话选编，附来源；不虚构公司、客户或经营成绩。
+- 各作品仍为实验原型，使用条件与限制见各介绍页。
+- 早期 ZGEO-1102 商家事实页实验保存在 archive/zgeo-1102/；旧观察不与新站结果混算。
+- 来源、许可与 AI 辅助说明见 credits.html；搜索实验见 experiment.html。
 
-创建日期：2026-11-02。目标城市是郑州，行业尚未指定。没有真实门店接入，不虚构地址、电话、价格或评价。表单只在浏览器中处理，不会自动上传或发布。
-
-页面公开、被网址读取、被项目名搜索到、被自然场景推荐，是不同层次。本站尚未获得豆包 App 独立检索的可核验证据，测试结果应保存实际回答和来源。
-
-本仓库仅包含拟公开的静态网页及说明；不包含本机资料、登录凭据或商家填写数据。
-
-流程参考 [GEO 医生](https://github.com/Fangx-AI/geo-doctor) 的事实卡与复测思路。本 demo 不是该开源项目、豆包或抖音的官方产品。
+本仓库只导出白名单公开静态文件，不包含本机个人 IP 资料库、GEO 工作台资料或认证数据。
+搜索诊断参考 [GEO 医生](https://github.com/Fangx-AI/geo-doctor)；上线与技术通过不代表豆包已收录。
