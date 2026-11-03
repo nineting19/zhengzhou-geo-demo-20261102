@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/sitemap.xml

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>豆包 API 回答，能代表豆包 App 搜索吗？</title>
+<meta name="description" content="为什么 API 采样和用户端联网搜索应当分别记录？">
+<link rel="canonical" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/api-vs-app.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"豆包 API 回答，能代表豆包 App 搜索吗？","inLanguage":"zh","datePublished":"2026-11-03","dateModified":"2026-11-03","description":"为什么 API 采样和用户端联网搜索应当分别记录？","mainEntityOfPage":"https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/api-vs-app.html"}</script>
+<style>body{max-width:720px;margin:40px auto;padding:0 16px;font:17px/1.75 system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#1f2328}table{border-collapse:collapse}th,td{border:1px solid #d0d7de;padding:6px 10px}time{color:#57606a;font-size:14px}</style>
+</head>
+<body>
+<main>
+<article>
+<h1>豆包 API 回答，能代表豆包 App 搜索吗？</h1>
+<p><time datetime="2026-11-03">2026-11-03</time></p>
+<h2>先记录你实际测了哪个入口</h2>
+<p>同一品牌可以有 App、网页和 API 等入口。入口不同、模型模式不同、是否启用检索不同，都可能影响答案。因此实验必须记下实际环境，不能只写一个平台名。</p>
+<h2>缺少检索证据时不要补推断</h2>
+<p>一次普通模型调用未必执行了联网搜索；仅凭能生成答案，不能推断它找到并核对了网页。具体接口是否支持检索，要以当前官方文档、配置和调用记录为准。也不能把一个 API 的成功引用直接记为 App 场景推荐成功。</p>
+<h2>本 demo 怎样处理</h2>
+<p>拾玖搜证台按平台、入口、模式、联网状态、登录和地区分组。它本身不连接 API、不自动访问豆包，用户手动保存每条回答与来源，不知道的条件填写未知。</p>
+<h2>什么可以当作阶段结果</h2>
+<p>技术检查说明页面能否访问、事实是否清晰；读取测试说明给定来源能否被理解；名称和需求测试才观察独立发现与推荐。每项需要自己的证据，不用一个层级的结果代替另一个。</p>
+<p><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/">工具事实与限制</a>。<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html">实验判定方法</a>。当前没有本项目的豆包实测命中证据。</p>
+</article>
+</main>
+</body>
+</html>

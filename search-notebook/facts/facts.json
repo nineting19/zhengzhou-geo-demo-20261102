@@ -1,0 +1,182 @@
+{
+  "name": "拾玖搜证台",
+  "summary": "浏览器本地的 AI 搜索实验记录工具，手动保存回答和来源，分别统计名称发现、需求推荐和网址读取。",
+  "confirmedOn": "2026-11-03",
+  "facts": [
+    {
+      "id": "B01",
+      "section": "基本信息",
+      "item": "名称",
+      "value": "拾玖搜证台",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "B02",
+      "section": "基本信息",
+      "item": "别名",
+      "value": "AI 搜索实验记录器",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "B03",
+      "section": "基本信息",
+      "item": "一句话说明",
+      "value": "浏览器本地的 AI 搜索实验记录工具，手动保存回答和来源，分别统计名称发现、需求推荐和网址读取。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "B04",
+      "section": "基本信息",
+      "item": "类型",
+      "value": "软件工具实验，不是虚构公司或线下门店。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "B05",
+      "section": "基本信息",
+      "item": "官网",
+      "value": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "B08",
+      "section": "基本信息",
+      "item": "当前版本",
+      "value": "1.0",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "U01",
+      "section": "适合谁",
+      "item": "适合谁",
+      "value": "需要少量手动验证 AI 搜索结果、保存原始证据的创作者与小团队。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "N01",
+      "section": "不适合谁",
+      "item": "不适合谁",
+      "value": "需要自动批量代问、多人实时协作、跨设备自动同步或效果保证的人。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F01",
+      "section": "核心能力",
+      "item": "保存原文",
+      "value": "手动填写完整回答、引用链接、环境与人工复核标记。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F02",
+      "section": "核心能力",
+      "item": "分路径统计",
+      "value": "名称发现、需求推荐、网址读取分开；技术失败和不合规问句单列。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F03",
+      "section": "核心能力",
+      "item": "导出备份",
+      "value": "导出 JSON、GEO 医生格式 CSV 与 Markdown 报告；JSON 保留原文。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F04",
+      "section": "核心能力",
+      "item": "合并导入",
+      "value": "JSON 按 id 去重合并，不覆盖已有记录；最多 3 MB 和 2000 条。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F05",
+      "section": "核心能力",
+      "item": "独立练习",
+      "value": "模拟练习数据与真实采样分区，模拟记录明确标记。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "F06",
+      "section": "核心能力",
+      "item": "离线使用",
+      "value": "提供内嵌代码的单文件 HTML 记录器，下载后可离线记录与导出。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "P01",
+      "section": "价格",
+      "item": "价格",
+      "value": "当前工具免费，无需付费 API；不承诺长期托管。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "C01",
+      "section": "使用条件",
+      "item": "使用条件",
+      "value": "现代浏览器启用 JavaScript；本工具无需注册或 API Key。外部平台的登录条件另行决定。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "X01",
+      "section": "明确不支持",
+      "item": "不支持",
+      "value": "不会自动打开、登录、代问豆包，不调用模型 API，不绕过平台访问条件。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "X02",
+      "section": "明确不支持",
+      "item": "不保证",
+      "value": "不保证收录、推荐、排名或任何搜索命中率。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "X03",
+      "section": "明确不支持",
+      "item": "不支持协作",
+      "value": "不提供服务器采样数据库、跨设备自动同步和实时多人协作。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "S01",
+      "section": "数据与安全",
+      "item": "本地保存",
+      "value": "采样记录在当前浏览器 localStorage，应用没有上传采样内容的接口。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "S02",
+      "section": "数据与安全",
+      "item": "备份限制",
+      "value": "清理浏览器数据或隐私模式结束可能丢失记录，请及时导出 JSON。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "S03",
+      "section": "数据与安全",
+      "item": "网络边界",
+      "value": "在线访问和打开外部来源会发起网络请求；离线版记录无需联网。",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "E01",
+      "section": "公开证据",
+      "item": "产品入口",
+      "value": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "E02",
+      "section": "公开证据",
+      "item": "使用指南",
+      "value": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    },
+    {
+      "id": "E03",
+      "section": "公开证据",
+      "item": "上游项目",
+      "value": "https://github.com/Fangx-AI/geo-doctor",
+      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    }
+  ]
+}

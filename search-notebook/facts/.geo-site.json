@@ -1,0 +1,19 @@
+{
+  "generator": "geo-site",
+  "files": [
+    "index.html",
+    "faq.html",
+    "llms.txt",
+    "facts.json",
+    "robots.txt",
+    ".nojekyll",
+    "articles/index.html",
+    "articles/api-vs-app.html",
+    "articles/read-vs-discover.html",
+    "articles/record-search-evidence.html",
+    "sitemap.xml",
+    "fill.json",
+    "geo-fill.user.js",
+    "distribute.html"
+  ]
+}

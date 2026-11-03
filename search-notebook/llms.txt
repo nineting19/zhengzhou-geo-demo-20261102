@@ -1,0 +1,10 @@
+# 拾玖搜证台
+
+浏览器本地 AI 搜索实验记录器；手动保存回答和来源。不是自动代问工具，不保证搜索命中。
+
+- [项目说明](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/)
+- [真实可用记录器](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html)
+- [已确认事实](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/)
+- [实验指南](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html)
+- [核验状态：尚无豆包独立发现实测](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/evidence.html)
+- [上游与许可](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/credits.html)

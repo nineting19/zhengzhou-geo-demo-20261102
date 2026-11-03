@@ -1,0 +1,41 @@
+# 拾玖搜证台
+
+> 浏览器本地的 AI 搜索实验记录工具，手动保存回答和来源，分别统计名称发现、需求推荐和网址读取。
+
+- 别名：AI 搜索实验记录器
+- 类型：软件工具实验，不是虚构公司或线下门店。
+- 官网：https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/
+- 当前版本：1.0
+- 需要少量手动验证 AI 搜索结果、保存原始证据的创作者与小团队。
+- 需要自动批量代问、多人实时协作、跨设备自动同步或效果保证的人。
+- 手动填写完整回答、引用链接、环境与人工复核标记。
+- 名称发现、需求推荐、网址读取分开；技术失败和不合规问句单列。
+- 导出 JSON、GEO 医生格式 CSV 与 Markdown 报告；JSON 保留原文。
+- JSON 按 id 去重合并，不覆盖已有记录；最多 3 MB 和 2000 条。
+- 模拟练习数据与真实采样分区，模拟记录明确标记。
+- 提供内嵌代码的单文件 HTML 记录器，下载后可离线记录与导出。
+- 价格：当前工具免费，无需付费 API；不承诺长期托管。
+- 使用条件：现代浏览器启用 JavaScript；本工具无需注册或 API Key。外部平台的登录条件另行决定。
+- 不会自动打开、登录、代问豆包，不调用模型 API，不绕过平台访问条件。
+- 不保证收录、推荐、排名或任何搜索命中率。
+- 不提供服务器采样数据库、跨设备自动同步和实时多人协作。
+- 本地保存：采样记录在当前浏览器 localStorage，应用没有上传采样内容的接口。
+- 备份限制：清理浏览器数据或隐私模式结束可能丢失记录，请及时导出 JSON。
+- 网络边界：在线访问和打开外部来源会发起网络请求；离线版记录无需联网。
+- https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html
+- https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html
+- https://github.com/Fangx-AI/geo-doctor
+
+## 页面
+
+- [事实页](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/index.html)
+- [常见问题](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/faq.html)
+- [facts.json](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/facts.json)
+
+## 文章
+
+- [豆包 API 回答，能代表豆包 App 搜索吗？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/api-vs-app.html): 为什么 API 采样和用户端联网搜索应当分别记录？
+- [给网址能读取，为什么只给名字却搜不到？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/read-vs-discover.html): 给网址读取成功能否证明 AI 搜索已经发现项目？
+- [小团队怎样保留 AI 搜索实验原文与来源？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/record-search-evidence.html): 不接付费 API，怎样做一轮可复核的小规模 AI 搜索实验？
+
+以上事实由 本次实现代理依据源码与测试核对；不代表用户实测成效背书 确认于 2026-11-03。

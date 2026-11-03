@@ -1,0 +1,139 @@
+# 事实卡 f1 · 拾玖搜证台
+# 结构参考 Fangx-AI/geo-doctor；本次填充为实际实现事实，不是模型采样结果。
+基本信息:
+  - 编号: B01
+    项目: 名称
+    内容: "拾玖搜证台"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: B02
+    项目: 别名
+    内容: "AI 搜索实验记录器"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: B03
+    项目: 一句话说明
+    内容: "浏览器本地的 AI 搜索实验记录工具，手动保存回答和来源，分别统计名称发现、需求推荐和网址读取。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: B04
+    项目: 类型
+    内容: "软件工具实验，不是虚构公司或线下门店。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: B05
+    项目: 官网
+    内容: "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: B08
+    项目: 当前版本
+    内容: "1.0"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+适合谁:
+  - 编号: U01
+    项目: 适合谁
+    内容: "需要少量手动验证 AI 搜索结果、保存原始证据的创作者与小团队。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+不适合谁:
+  - 编号: N01
+    项目: 不适合谁
+    内容: "需要自动批量代问、多人实时协作、跨设备自动同步或效果保证的人。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+核心能力:
+  - 编号: F01
+    项目: 保存原文
+    内容: "手动填写完整回答、引用链接、环境与人工复核标记。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: F02
+    项目: 分路径统计
+    内容: "名称发现、需求推荐、网址读取分开；技术失败和不合规问句单列。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: F03
+    项目: 导出备份
+    内容: "导出 JSON、GEO 医生格式 CSV 与 Markdown 报告；JSON 保留原文。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: F04
+    项目: 合并导入
+    内容: "JSON 按 id 去重合并，不覆盖已有记录；最多 3 MB 和 2000 条。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: F05
+    项目: 独立练习
+    内容: "模拟练习数据与真实采样分区，模拟记录明确标记。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: F06
+    项目: 离线使用
+    内容: "提供内嵌代码的单文件 HTML 记录器，下载后可离线记录与导出。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+价格:
+  - 编号: P01
+    项目: 价格
+    内容: "当前工具免费，无需付费 API；不承诺长期托管。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+使用条件:
+  - 编号: C01
+    项目: 使用条件
+    内容: "现代浏览器启用 JavaScript；本工具无需注册或 API Key。外部平台的登录条件另行决定。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+明确不支持:
+  - 编号: X01
+    项目: 不支持
+    内容: "不会自动打开、登录、代问豆包，不调用模型 API，不绕过平台访问条件。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: X02
+    项目: 不保证
+    内容: "不保证收录、推荐、排名或任何搜索命中率。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: X03
+    项目: 不支持协作
+    内容: "不提供服务器采样数据库、跨设备自动同步和实时多人协作。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+数据与安全:
+  - 编号: S01
+    项目: 本地保存
+    内容: "采样记录在当前浏览器 localStorage，应用没有上传采样内容的接口。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: S02
+    项目: 备份限制
+    内容: "清理浏览器数据或隐私模式结束可能丢失记录，请及时导出 JSON。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: S03
+    项目: 网络边界
+    内容: "在线访问和打开外部来源会发起网络请求；离线版记录无需联网。"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+公开证据:
+  - 编号: E01
+    项目: 产品入口
+    内容: "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: E02
+    项目: 使用指南
+    内容: "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+  - 编号: E03
+    项目: 上游项目
+    内容: "https://github.com/Fangx-AI/geo-doctor"
+    来源: "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+    状态: 已确认
+维护信息:
+  确认人: "本次实现代理依据源码与测试核对；不代表用户实测成效背书"
+  确认日期: "2026-11-03"

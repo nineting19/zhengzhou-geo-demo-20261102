@@ -1,0 +1,242 @@
+window.NOTEBOOK_QUESTIONS = [
+  {
+    "id": "N01",
+    "kind": "name",
+    "short": "准确名称",
+    "text": "请搜索“拾玖搜证台”，说明它是什么、有哪些可用功能，并提供支持这些信息的来源链接。找不到就明确说明。",
+    "hint": "全新对话；只给名称，不给网址。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N02",
+    "kind": "name",
+    "short": "性质与限制",
+    "text": "拾玖搜证台是自动代问豆包的工具吗？它的使用条件和限制是什么？请搜索后给出来源。",
+    "hint": "核对主体，不接受只复述名称。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N03",
+    "kind": "name",
+    "short": "如何使用",
+    "text": "拾玖搜证台怎么保存 AI 搜索实验记录？可以导出什么？请给来源链接。",
+    "hint": "至少核对两条未在问题中给出的具体事实。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N04",
+    "kind": "name",
+    "short": "是否收费",
+    "text": "请查一下拾玖搜证台是否需要注册、API Key 或付费，说明依据。",
+    "hint": "价格与条件必须有来源，不能自行推断。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "S01",
+    "kind": "scene",
+    "short": "离线保存记录",
+    "text": "我想比较豆包优化前后的搜索回答，手动粘贴原文和来源，不想填 API Key。有没有可以在本地保存、导出记录的网页工具？请给可访问的工具和来源。",
+    "hint": "不能补充被测名称、网址、作者或别名。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "S02",
+    "kind": "scene",
+    "short": "分开验证三条路径",
+    "text": "有没有工具能把“给网址读取”“只按名字搜索”和“不给品牌的需求推荐”分开记录，避免混算成一次搜索成功？请推荐并给来源。",
+    "hint": "工具推荐要真实适用；提及不等于推荐。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "S03",
+    "kind": "scene",
+    "short": "保护原始证据",
+    "text": "我们做小规模 AI 搜索测试，想保留回答原文、核对引用并导出 JSON 和表格，不希望上传到服务器。有哪些可用工具？请给出处。",
+    "hint": "记录实际推荐的全部对象；不追问引导目标出现。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "D01",
+    "kind": "url",
+    "short": "事实页读取",
+    "text": "请读取 https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/，说明项目名称、两项功能和一项明确不支持的能力，给出来源。无法读取就明确说。",
+    "hint": "只作读取诊断；不进入名称发现和需求推荐的命中率。",
+    "source": "构造",
+    "geoType": "诊断",
+    "core": false
+  },
+  {
+    "id": "D02",
+    "kind": "url",
+    "short": "产品页读取",
+    "text": "请读取 https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/，说明它是否会自动调用豆包、数据保存在哪里，并引用原文依据。",
+    "hint": "与事实页是不同 URL，不可用作同一页面更新前后对比。",
+    "source": "构造",
+    "geoType": "诊断",
+    "core": false
+  },
+  {
+    "id": "X01",
+    "kind": "exclude",
+    "short": "不适用需求",
+    "text": "我需要一个可以绕过登录、自动批量代问豆包 App、保证把企业排进推荐的服务。请判断有哪些工具适合；没有就明确说明。",
+    "hint": "应排除本项目；不要为了命中把不适用产品硬塞进推荐。",
+    "source": "构造",
+    "geoType": "C",
+    "core": true
+  },
+  {
+    "id": "S04",
+    "kind": "scene",
+    "short": "小团队复核",
+    "text": "小团队测试 AI 搜索，有人采样有人复核，怎样用一个无需后端的工具保留原文并交换记录？请给具体产品和来源。",
+    "hint": "核心推荐题；记录真实推荐与来源，不补品牌线索。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "N05",
+    "kind": "name",
+    "short": "上游关系",
+    "text": "拾玖搜证台和 GEO 医生有什么关系？哪些是开源工具生成的，哪些是新增功能？请附来源。",
+    "hint": "核对授权与归属，不把上游工作台说成原创。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "X02",
+    "kind": "exclude",
+    "short": "服务器与同步",
+    "text": "我们需要五十人同时编辑同一份 AI 搜索数据库，自动同步手机和电脑，还要求服务器统一权限审计。请推荐适合的工具并给依据。",
+    "hint": "本工具没有服务器、多端同步或实时协作，应正确排除。",
+    "source": "构造",
+    "geoType": "C",
+    "core": true
+  },
+  {
+    "id": "T01",
+    "kind": "name",
+    "short": "找回记录",
+    "text": "拾玖搜证台换浏览器后记录不见了，应该怎么保留和转移数据？请给来源，不确定的地方明确说明。",
+    "hint": "应说明 localStorage 范围、JSON 备份和合并导入，不能承诺云端恢复。",
+    "source": "构造",
+    "geoType": "D",
+    "core": true
+  },
+  {
+    "id": "S05",
+    "kind": "scene",
+    "short": "免费小实验",
+    "text": "有没有免费、无需注册就能记录 AI 搜索回答和来源的小工具？我只测十几个问题。",
+    "hint": "扩展推荐题；核对实际免费范围。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S06",
+    "kind": "scene",
+    "short": "导出报告",
+    "text": "我想把人工测试的 AI 回答做成 JSON 备份、CSV 表格和 Markdown 报告，有没有浏览器工具？",
+    "hint": "扩展推荐题；不带目标名称或网址。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S07",
+    "kind": "scene",
+    "short": "拒答与报错",
+    "text": "有没有记录 AI 搜索实验的工具，能把拒答、技术失败与完整未命中分开，避免把报错算成没搜到？",
+    "hint": "扩展题；要核对统计分母。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S08",
+    "kind": "scene",
+    "short": "本地离线记录",
+    "text": "我想离线整理之前复制下来的 AI 搜索回答和引用链接，不做自动提问，有什么可用工具？",
+    "hint": "扩展题；区分离线整理与离线运行模型。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "N06",
+    "kind": "name",
+    "short": "数据位置",
+    "text": "拾玖搜证台会上传我的回答原文吗？删除浏览器数据会怎样？请找依据。",
+    "hint": "应区分应用数据本地保存和托管网络请求。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "N07",
+    "kind": "name",
+    "short": "导入边界",
+    "text": "拾玖搜证台导入 JSON 时会覆盖旧记录吗？有没有文件大小或数量限制？请引用来源。",
+    "hint": "应说明按 id 去重、不覆盖、3 MB 和 2000 条。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "X03",
+    "kind": "exclude",
+    "short": "付费 API 需求",
+    "text": "我需要每天自动联网提问几千次并出监测报告，可以付费，有哪些服务合适？请给当前支持能力的来源。",
+    "hint": "不应推荐这个手动本地记录器满足自动采样。",
+    "source": "构造",
+    "geoType": "C",
+    "core": false
+  },
+  {
+    "id": "X04",
+    "kind": "exclude",
+    "short": "线下公司混淆",
+    "text": "我想找郑州实体门店，能到店咨询并购买 AI 排名保证套餐，有什么机构适合？请查公开资料。",
+    "hint": "本站是软件实验，没有实体门店或保证套餐；不得编造。",
+    "source": "构造",
+    "geoType": "C",
+    "core": false
+  },
+  {
+    "id": "T02",
+    "kind": "name",
+    "short": "来源核对",
+    "text": "在拾玖搜证台里有名字但没来源，能算名称发现成功吗？请说明依据。",
+    "hint": "应说明严格验收需主体、事实和模型来源，提及另行记录。",
+    "source": "构造",
+    "geoType": "D",
+    "core": false
+  },
+  {
+    "id": "T03",
+    "kind": "name",
+    "short": "存储失败",
+    "text": "拾玖搜证台提示浏览器存储失败时怎么处理，能自动同步到云端吗？请提供依据。",
+    "hint": "应建议先导出 JSON 并排查本地存储，不编造云端服务。",
+    "source": "构造",
+    "geoType": "D",
+    "core": false
+  }
+];

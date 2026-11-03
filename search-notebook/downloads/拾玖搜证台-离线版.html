@@ -1,0 +1,388 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>实验记录器 · 拾玖搜证台</title><meta name="description" content="手动粘贴 AI 搜索回答，保存原始证据，人工核验事实和来源，分批统计并导出。"><meta name="robots" content="index,follow"><link rel="canonical" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html"><meta property="og:title" content="实验记录器 · 拾玖搜证台"><meta property="og:description" content="手动粘贴 AI 搜索回答，保存原始证据，人工核验事实和来源，分批统计并导出。"><meta property="og:type" content="website"><meta property="og:url" content="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html"><link rel="icon" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/icon.svg" type="image/svg+xml"><style>:root{--paper:#f6f7f3;--card:#fff;--ink:#182925;--muted:#5b6a64;--line:#dbe3dc;--green:#17594c;--lime:#dff19a;--blue:#2c53c7;--orange:#9b5321;--radius:20px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:system-ui,-apple-system,"Segoe UI","Microsoft Yahei",sans-serif;line-height:1.7}a{color:var(--green);text-underline-offset:4px}a:hover{color:var(--blue)}button,input,textarea,select{font:inherit}button,a,input,textarea,select{touch-action:manipulation}button{cursor:pointer}button:disabled{opacity:.55;cursor:default}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.wrap{max-width:1180px;margin:auto;padding:0 28px}.header{border-bottom:1px solid var(--line);background:#ffffffde}.nav{display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:84px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;color:var(--ink);font-size:20px}.mark{display:grid;place-items:center;width:38px;height:38px;background:var(--green);color:var(--lime);border-radius:12px}.navlinks{display:flex;gap:23px;flex-wrap:wrap;font-size:14px}.navlinks a{text-decoration:none}.navlinks [aria-current=page]{font-weight:800;border-bottom:2px solid var(--green)}main{padding:54px 0 80px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(34px,5.6vw,65px);line-height:1.18;letter-spacing:-2px;font-weight:800;margin-bottom:26px}h2{font-size:clamp(25px,3vw,36px);line-height:1.35;letter-spacing:-.6px}h3{font-size:20px;line-height:1.5;margin-bottom:14px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--green);margin-bottom:18px}.lede{font-size:18px;color:var(--muted);max-width:650px}.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:55px;align-items:center;padding:25px 0 65px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn,button.primary{background:var(--green);color:white;border:1px solid var(--green);border-radius:10px;display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;text-decoration:none;font-weight:700}.btn:hover,button.primary:hover{background:#113f37;color:white}.btn.secondary,button.secondary{background:white;color:var(--green);border:1px solid var(--line);border-radius:10px;padding:11px 18px}.tiny{font-size:12px;color:var(--muted)}.muted{color:var(--muted)}.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.hero-panel{background:var(--green);color:white;border:0;box-shadow:0 20px 50px #173c2521;transform:rotate(-1deg)}.hero-panel .muted,.hero-panel .tiny{color:#c4ded3}.board-top{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid #ffffff30;padding-bottom:18px;margin-bottom:20px}.badge{display:inline-block;background:#edf2eb;color:var(--green);border:1px solid #d3e1d5;border-radius:30px;padding:3px 10px;font-size:12px;font-weight:700}.hero-panel .badge{background:var(--lime);border:0}.sample-line{padding:14px 0;border-bottom:1px solid #ffffff22;display:flex;justify-content:space-between;gap:18px}.sample-line span:last-child{color:var(--lime);white-space:nowrap}.section{padding:52px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:26px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.number{display:block;color:var(--blue);font-size:13px;font-weight:800;margin-bottom:30px}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:flow}.flow>div{counter-increment:flow;background:white;border:1px solid var(--line);border-radius:16px;padding:22px 18px}.flow>div:before{content:"0"counter(flow);display:block;font-size:13px;font-weight:800;color:var(--green);margin-bottom:20px}.callout{border-left:4px solid var(--green);background:#eaf1e7;padding:20px 24px;border-radius:0 12px 12px 0}.callout.warning{border-color:#a76520;background:#fff4e6}.prose{max-width:840px}.prose h2{margin-top:44px}.prose ul,.prose ol{padding-left:24px}.prose li{margin-bottom:10px}.prose pre{padding:20px;background:#18302b;color:#edf6ec;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:12px}.prose table{width:100%;border-collapse:collapse;font-size:14px}.prose td,.prose th{border-bottom:1px solid var(--line);padding:12px 8px;text-align:left}.footer{border-top:1px solid var(--line);padding:32px 0;font-size:13px;color:var(--muted)}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.app-head{display:flex;justify-content:space-between;gap:20px;align-items:start}.app-head h1{font-size:38px;letter-spacing:-1px;margin-bottom:12px}.notice{margin:22px 0;padding:15px 20px;border:1px solid var(--line);border-radius:12px;background:#edf4e9}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:22px 0}.toolbar label{font-size:13px}.toolbar select{min-width:200px;max-width:100%}.app-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:start}.app-grid .panel{min-width:0}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:17px;font-size:13px;font-weight:600}.field input,.field select,.field textarea,input,select{width:100%;border:1px solid #cdd8ce;border-radius:9px;padding:10px 12px;background:white;color:var(--ink)}textarea{resize:vertical;min-height:85px}.field textarea.long{min-height:190px}.field small{font-weight:400;color:var(--muted)}.checks{display:grid;gap:10px;font-size:13px;margin:18px 0}.checks label{display:flex;align-items:flex-start;gap:8px}.checks input{width:17px;height:17px;margin-top:3px;flex-shrink:0}.metric{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.metric>div{padding:16px;background:white;border:1px solid var(--line);border-radius:12px}.metric strong{font-size:25px;display:block;margin:5px 0}.metric small{font-size:11px;color:var(--muted)}.record{padding:16px 0;border-bottom:1px solid var(--line);font-size:13px}.record summary{cursor:pointer;line-height:1.7;font-weight:600;overflow-wrap:anywhere}.record pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;max-height:320px;overflow:auto;background:var(--paper);padding:12px;border-radius:8px}.record .tiny{overflow-wrap:anywhere}.record button{font-size:12px;padding:5px 10px}.record a{overflow-wrap:anywhere}.tools{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tools button,.tools .file-label{font-size:12px;padding:9px 12px;background:white;color:var(--green);border:1px solid var(--line);border-radius:8px;cursor:pointer}.file-label input{display:none}.statusline{font-size:12px;color:var(--orange);min-height:20px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#182f29;color:white;padding:12px 22px;border-radius:10px;max-width:92vw;z-index:20;box-shadow:0 8px 30px #0002}.hidden{display:none}.skip{position:absolute;top:-100px;left:20px;background:white;padding:15px;z-index:99}.skip:focus{top:8px}.step{font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--green);margin:25px 0 15px;border-bottom:1px solid var(--line);padding-bottom:10px}.empty{padding:30px 10px;text-align:center;color:var(--muted);font-size:14px}.danger{color:#a13a27!important}.kpi-group{margin-bottom:18px}.kpi-group h3{font-size:12px;overflow-wrap:anywhere;color:var(--muted);font-weight:500}.pill{background:var(--lime);color:#284320;border-radius:20px;padding:3px 9px;font-size:11px}.page-title{font-size:44px;letter-spacing:-1px}.download-list{display:grid;gap:12px}.download-list a{display:flex;justify-content:space-between;gap:20px;padding:18px 22px;background:white;border:1px solid var(--line);border-radius:12px;text-decoration:none}.download-list span{font-size:12px;color:var(--muted)}@media(max-width:850px){.hero,.app-grid{grid-template-columns:1fr}.hero{gap:30px;padding-top:0}.hero-panel{transform:none}.grid3,.flow{grid-template-columns:1fr 1fr}.flow>div:last-child{grid-column:1/-1}.section-head{display:block}.navlinks{gap:16px}.app-head{flex-wrap:wrap}}@media(max-width:550px){.wrap{padding:0 18px}main{padding-top:30px}.nav{gap:14px}.navlinks{font-size:12px;gap:13px}.grid3,.grid2,.flow{grid-template-columns:1fr}.flow>div:last-child{grid-column:auto}.panel,.card{padding:21px}.hero{padding-bottom:40px}.section{padding:35px 0}.grid2 .field{margin-bottom:0}.metric{gap:7px}.metric>div{padding:12px 8px}.metric strong{font-size:20px}.page-title{font-size:34px}.prose table{display:block;overflow:auto}h1{letter-spacing:-1px}.toolbar{align-items:stretch}.toolbar>label{width:100%}.app-head h1{font-size:32px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style></head><body><a class="skip" href="#main">跳到正文</a><header class="header"><div class="wrap nav"><a class="brand" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/index.html"><span class="mark" aria-hidden="true">十九</span>拾玖搜证台</a><nav class="navlinks" aria-label="主导航"><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/index.html" >项目</a><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html" aria-current="page">记录器</a><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html" >实验指南</a><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/method.html" >技术路线</a><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/index.html" >事实页</a><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/downloads.html" >下载</a></nav></div></header><main id="main"><div class="wrap">
+<div class="app-head"><div><p class="eyebrow">SEARCH NOTEBOOK / 01</p><h1>先保存原文，再谈命中。</h1><p class="muted">名称发现和需求推荐分别统计；网址读取单独诊断。</p></div><button type="button" class="secondary" id="toggle-practice">试用模拟练习</button></div><div id="mode-banner" class="callout"><strong id="mode-label">离线记录器 · 真实采样</strong><br><span class="tiny">手动填写，不自动访问豆包。换浏览器、清理缓存会影响记录；请及时导出 JSON。</span></div><p id="storage-warning" role="alert" class="statusline"></p>
+<div class="toolbar"><label for="batch-filter">查看批次<select id="batch-filter"><option value="all">全部批次</option></select></label><span class="tiny">不同平台、入口、模型模式、联网、登录及地区单独分组。</span></div><div id="metrics" aria-live="polite"></div>
+<div class="app-grid"><section class="panel"><h2 style="font-size:25px">新增一条记录</h2><form id="record-form"><div class="step">01 · 测试对象与问句</div><div class="grid2"><label class="field" for="brand">被测名称<input id="brand" type="text" value="拾玖搜证台" required></label><label class="field" for="batch">批次名称<input id="batch" type="text" value="" required></label></div><label class="field" for="question-id">构造问题集（q1）<select id="question-id"></select></label><p class="tiny" id="question-hint"></p><label class="field" for="kind">测试路径<select id="kind"><option value="name">名称发现</option><option value="scene">需求推荐</option><option value="url">网址读取</option><option value="exclude">不适用排除</option></select></label><label class="field" for="question">实际提问内容<textarea id="question" rows="4" required></textarea><small>可编辑。需求测试不得包含名称、别名、作者或网址；给过线索的记录请改为诊断。</small></label><button type="button" class="secondary" id="copy">复制问句</button><div class="step">02 · 实际测试环境</div><div class="grid2"><label class="field" for="platform">平台<input id="platform" type="text" value="豆包" required></label><label class="field" for="entry">入口<select id="entry"><option value="网页">网页</option><option value="App">App</option><option value="API">API（不代表 App）</option></select></label><label class="field" for="mode">模型 / 产品模式<input id="mode" type="text" value="未知" ></label><label class="field" for="network">联网搜索<select id="network"><option value="未知">未知</option><option value="已开启">已开启</option><option value="关闭">关闭</option></select></label><label class="field" for="login">登录状态<select id="login"><option value="未知">未知</option><option value="已登录">已登录</option><option value="未登录">未登录</option></select></label><label class="field" for="region">测试地区<input id="region" type="text" value="未知" ></label></div><div class="checks"><label><input type="checkbox" id="fresh">我在全新对话中提问，之前没有给网址、相关页面或答案线索</label></div><div class="step">03 · 原文与人工核验</div><label class="field" for="status">回答状态<select id="status"><option value="complete">完整回答</option><option value="refusal">明确拒答</option><option value="technical">技术失败</option><option value="incomplete">未完成</option></select></label><label class="field" for="answer">完整回答原文<textarea id="answer" class="long" required placeholder="粘贴原文。不要把截图 OCR 摘要或我们的期望答案当成模型原文。"></textarea></label><label class="field" for="sources">模型实际给出的来源链接<textarea id="sources" placeholder="每行一个完整 https:// 地址"></textarea><small>不要将自己补找的网页冒充模型引用。请逐个打开核对。</small></label><label class="field" for="fact-notes">核对到的具体事实<textarea id="fact-notes" placeholder="至少两行，各写一条问题里没给出的具体事实与核对依据"></textarea></label><div class="checks"><label><input type="checkbox" id="mentioned">回答实际提到了被测对象</label><label><input type="checkbox" id="identity">名称和主体对应正确，没有同名混淆</label><label><input type="checkbox" id="facts">回答中的具体事实经人工核对正确</label><label><input type="checkbox" id="source-verified">至少一个模型引用链接能打开，且正文支持这些事实</label><label><input type="checkbox" id="recommended">回答确实将它推荐给该需求，而不只是提及</label></div><label class="field" for="notes">偏差 / 待查事项<textarea id="notes" placeholder="记录错误、未核实信息、其他被推荐对象、截图文件名等"></textarea></label><button id="save" class="primary" type="submit">保存这条证据</button><p class="tiny" style="margin-top:12px">自动计算只汇总你的人工标记，不会替你读懂或验证回答。</p></form></section>
+<aside class="panel"><h2 style="font-size:25px">证据簿 <span class="badge" id="count">0 条</span></h2><p class="tiny">导出当前筛选范围。JSON 是完整备份；CSV 与报告用于复核。模拟记录只能导入练习区。</p><div class="tools"><button id="export-json" type="button">导出 JSON</button><button id="export-csv" type="button">导出 CSV</button><button id="export-report" type="button">导出报告</button><button id="export-bundle" type="button">GEO 医生文件清单</button><label class="file-label">导入 JSON<input type="file" id="import-json" accept=".json,application/json"></label></div><div id="import-box" class="notice hidden"><p id="import-info"></p><button type="button" id="confirm-import" class="secondary">确认合并</button> <button type="button" id="cancel-import" class="secondary">取消</button></div><div id="record-list"></div><div class="callout" style="margin-top:24px"><strong>判定提醒</strong><p class="tiny">给网址读取成功不算独立发现。名称发现需原文、主体、至少两条事实与支持来源；需求推荐还需推荐行为。空白、技术失败和不符合提问条件的记录保留，但不进入有效样本分母。</p><a class="tiny" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html">完整判定和拆包说明 →</a></div></aside></div><div id="toast" class="toast hidden" role="status" aria-live="polite"></div></div></main><footer class="footer"><div class="wrap"><span>拾玖搜证台 1.0 · AI 搜索实验记录器 · 2026-11-03</span><span><a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/evidence.html">核验状态</a>　<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/credits.html">来源与许可</a>　<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/privacy.html">数据说明</a></span></div></footer><script>/* 拾玖搜证台 1.0 · MIT. Independent implementation; see credits.html. */
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) module.exports = factory();
+  else root.SearchNotebook = factory();
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const kinds = { name: '名称发现', scene: '需求推荐', url: '网址读取', exclude: '不适用排除' };
+  const statuses = { complete: '完整', refusal: '拒答', technical: '技术失败', incomplete: '不完整' };
+  const headers = ['run_id','问题id','轮次','平台','入口','日期','联网搜索','登录','地区','是否提到我们','位置','描述是否正确','错误内容','引用来源','备注','批次','问题集版本','事实卡版本','回答状态','排除是否正确','原文路径','来源状态','是否推荐我们','推荐了谁'];
+  function uid() { return globalThis.crypto && globalThis.crypto.randomUUID ? globalThis.crypto.randomUUID() : Date.now().toString(36) + '-' + Math.random().toString(36).slice(2); }
+  function url(s) { try { const u = new URL(s); return /^https?:$/.test(u.protocol) && !u.username && !u.password ? u.href : null; } catch { return null; } }
+  function urls(s) { return [...new Set(String(s || '').split(/\r?\n/).map(s=>s.trim()).filter(Boolean))]; }
+  function validate(r) {
+    if (!r || typeof r !== 'object' || Array.isArray(r)) throw Error('记录必须为对象');
+    const strings = ['id','questionId','kind','question','brand','batch','platform','entry','network','login','region','mode','created','status','answer','sources','factNotes','notes'];
+    const booleans = ['fresh','mentioned','identity','facts','sourceVerified','recommended','simulated'];
+    const out = {};
+    for (const k of strings) { if (typeof r[k] !== 'string' || r[k].length > (k==='answer'?80000:12000)) throw Error('字段无效：'+k); out[k]=r[k]; }
+    for (const k of booleans) { if (typeof r[k] !== 'boolean') throw Error('字段无效：'+k); out[k]=r[k]; }
+    if (!/^[a-zA-Z0-9-]{1,120}$/.test(out.id) || !out.brand.trim() || !out.question.trim() || !out.batch.trim() || !out.platform.trim() || !out.entry.trim() || !out.mode.trim()) throw Error('编号格式错误，或名称、批次、问题和环境为空');
+    if (!kinds[out.kind] || !statuses[out.status] || Number.isNaN(Date.parse(out.created))) throw Error('类型、状态或日期无效');
+    if (urls(out.sources).some(s=>!url(s))) throw Error('来源每行一个完整 http(s) 地址；不接受含账号密码的地址');
+    return out;
+  }
+  function protocol(r) {
+    const why=[];
+    if (r.kind==='name'||r.kind==='scene'||r.kind==='exclude') {
+      if (!r.fresh) why.push('未确认全新对话');
+      if (/https?:\/\//i.test(r.question)) why.push('独立发现问句给了网址');
+      if (r.kind==='scene' && r.question.toLowerCase().includes(r.brand.trim().toLowerCase())) why.push('需求问句包含被测名称');
+    }
+    return why;
+  }
+  function outcome(r) {
+    const reasons=protocol(r);
+    if (!['complete','refusal'].includes(r.status)) reasons.push('回答未完成或技术失败');
+    if (!r.answer.trim()) reasons.push('缺少回答原文');
+    const eligible=reasons.length===0;
+    const factsEnough=r.factNotes.split(/\r?\n/).filter(x=>x.trim()).length>=2;
+    const hasSources=urls(r.sources).length>0 && urls(r.sources).every(s=>url(s));
+    const evidence=r.identity&&r.facts&&factsEnough&&r.sourceVerified&&hasSources;
+    let success=eligible&&r.status==='complete'&&r.mentioned&&evidence;
+    if(r.kind==='scene') success=success&&r.recommended;
+    if(r.kind==='exclude') success=eligible&&r.status==='complete'&&!r.recommended&&r.facts&&r.factNotes.trim().length>0;
+    return {eligible,success,reasons,needsReview:eligible&&r.status==='complete'&&!success};
+  }
+  function groupKey(r) { return [r.batch,r.brand,r.platform,r.entry,r.mode,r.network,r.login,r.region,r.simulated?'练习':'真实'].join(' / '); }
+  function summarize(records) {
+    const groups={};
+    for (const r of records) {
+      const key=groupKey(r);
+      const g=groups[key]||(groups[key]={key,simulated:r.simulated,types:{}});
+      const t=g.types[r.kind]||(g.types[r.kind]={total:0,valid:0,success:0,excluded:0});
+      t.total++; const o=outcome(r); if(o.eligible) {t.valid++;if(o.success)t.success++;}else t.excluded++;
+    }
+    return Object.values(groups);
+  }
+  function csvCell(v) {
+    let s=String(v==null?'':v);
+    if(/^[\s]*[=+@-]/.test(s)||/^[\t\r]/.test(s))s="'"+s;
+    return '"'+s.replace(/"/g,'""')+'"';
+  }
+  function csv(records) {
+    const rounds=new Map();
+    return '\uFEFF'+[headers,...records.map(r=>{
+      const eligible=outcome(r).eligible,valid=['complete','refusal'].includes(r.status),roundKey=groupKey(r)+'/'+r.questionId;
+      const round=(rounds.get(roundKey)||0)+1;rounds.set(roundKey,round);
+      return [r.id,r.questionId,round,r.platform,r.entry,r.created,r.network,r.login,r.region,valid?(r.mentioned?'是':'否'):'未知','未知',valid&&r.identity&&r.facts?'对':'未知','',urls(r.sources).join(';'),`${kinds[r.kind]}；${r.simulated?'模拟练习':'真实手动采样'}；${outcome(r).reasons.join('；')}；人工来源核对=${r.sourceVerified}；${r.notes}`,`${groupKey(r)} / ${kinds[r.kind]}`,'q1','f1',valid&&!eligible?'不完整':statuses[r.status],r.kind==='exclude'?(outcome(r).success?'对':'未知'):'不适用',`raw/${r.id}.md`,urls(r.sources).length?'已提供':valid?'界面无来源':'未知',valid?(r.recommended?'推荐':'不推荐'):'未知',r.recommended?r.brand:''];
+    })].map(row=>row.map(csvCell).join(',')).join('\r\n');
+  }
+  function exportJSON(records) { return JSON.stringify({schemaVersion:1,exportedAt:new Date().toISOString(),records},null,2); }
+  function parseImport(text, existing=[]) {
+    if(text.length>3000000)throw Error('文件不能超过 3 MB');
+    let data;try{data=JSON.parse(text);}catch{throw Error('JSON 格式错误');}
+    if(!data||data.schemaVersion!==1||!Array.isArray(data.records)||data.records.length>2000)throw Error('需要 schemaVersion=1 的记录文件，最多 2000 条');
+    const seen=new Set(existing.map(r=>r.id));const records=[];let duplicates=0;
+    for(const item of data.records) {const r=validate(item);if(seen.has(r.id)){duplicates++;continue;}seen.add(r.id);records.push(r);}
+    if(existing.length+records.length>2000)throw Error('合并后超过 2000 条，请先导出备份');
+    return {records,duplicates};
+  }
+  function report(records) {
+    const out=['# 拾玖搜证台 · 采样报告','','统计为人工复核标记，不代表平台官方测评。网址读取不计入名称发现或需求推荐。原始 JSON 才是完整可回导备份。',''];
+    if(!records.length)out.push('尚无采样记录。');
+    for(const g of summarize(records)) {
+      out.push('## '+g.key,'',g.simulated?'**模拟练习数据，不是豆包实际结果。**':'人工记录，仍应逐条核对来源。','');
+      for(const [kind,t]of Object.entries(g.types))out.push(`${kinds[kind]}：${t.valid?`${t.success}/${t.valid}（${Math.round(100*t.success/t.valid)}%）`:'未采样'}；排除 ${t.excluded} 条。`);
+      out.push('');
+    }
+    for(const r of records)out.push('## '+r.id,`类型：${kinds[r.kind]} / ${r.simulated?'模拟':'真实'} / ${statuses[r.status]}`,`问句：${r.question}`,`结果：${outcome(r).success?'人工判定达标':'未达标或待核对'}`,`核对事实：\n${r.factNotes}`,`来源：\n${r.sources}`,'','回答原文：','',r.answer,'');
+    return out.join('\n');
+  }
+  return {kinds,statuses,headers,uid,url,urls,validate,protocol,outcome,summarize,csv,exportJSON,parseImport,report};
+});
+</script><script>window.NOTEBOOK_QUESTIONS = [
+  {
+    "id": "N01",
+    "kind": "name",
+    "short": "准确名称",
+    "text": "请搜索“拾玖搜证台”，说明它是什么、有哪些可用功能，并提供支持这些信息的来源链接。找不到就明确说明。",
+    "hint": "全新对话；只给名称，不给网址。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N02",
+    "kind": "name",
+    "short": "性质与限制",
+    "text": "拾玖搜证台是自动代问豆包的工具吗？它的使用条件和限制是什么？请搜索后给出来源。",
+    "hint": "核对主体，不接受只复述名称。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N03",
+    "kind": "name",
+    "short": "如何使用",
+    "text": "拾玖搜证台怎么保存 AI 搜索实验记录？可以导出什么？请给来源链接。",
+    "hint": "至少核对两条未在问题中给出的具体事实。",
+    "source": "构造",
+    "geoType": "B",
+    "core": true
+  },
+  {
+    "id": "N04",
+    "kind": "name",
+    "short": "是否收费",
+    "text": "请查一下拾玖搜证台是否需要注册、API Key 或付费，说明依据。",
+    "hint": "价格与条件必须有来源，不能自行推断。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "S01",
+    "kind": "scene",
+    "short": "离线保存记录",
+    "text": "我想比较豆包优化前后的搜索回答，手动粘贴原文和来源，不想填 API Key。有没有可以在本地保存、导出记录的网页工具？请给可访问的工具和来源。",
+    "hint": "不能补充被测名称、网址、作者或别名。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "S02",
+    "kind": "scene",
+    "short": "分开验证三条路径",
+    "text": "有没有工具能把“给网址读取”“只按名字搜索”和“不给品牌的需求推荐”分开记录，避免混算成一次搜索成功？请推荐并给来源。",
+    "hint": "工具推荐要真实适用；提及不等于推荐。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "S03",
+    "kind": "scene",
+    "short": "保护原始证据",
+    "text": "我们做小规模 AI 搜索测试，想保留回答原文、核对引用并导出 JSON 和表格，不希望上传到服务器。有哪些可用工具？请给出处。",
+    "hint": "记录实际推荐的全部对象；不追问引导目标出现。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "D01",
+    "kind": "url",
+    "short": "事实页读取",
+    "text": "请读取 https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/，说明项目名称、两项功能和一项明确不支持的能力，给出来源。无法读取就明确说。",
+    "hint": "只作读取诊断；不进入名称发现和需求推荐的命中率。",
+    "source": "构造",
+    "geoType": "诊断",
+    "core": false
+  },
+  {
+    "id": "D02",
+    "kind": "url",
+    "short": "产品页读取",
+    "text": "请读取 https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/，说明它是否会自动调用豆包、数据保存在哪里，并引用原文依据。",
+    "hint": "与事实页是不同 URL，不可用作同一页面更新前后对比。",
+    "source": "构造",
+    "geoType": "诊断",
+    "core": false
+  },
+  {
+    "id": "X01",
+    "kind": "exclude",
+    "short": "不适用需求",
+    "text": "我需要一个可以绕过登录、自动批量代问豆包 App、保证把企业排进推荐的服务。请判断有哪些工具适合；没有就明确说明。",
+    "hint": "应排除本项目；不要为了命中把不适用产品硬塞进推荐。",
+    "source": "构造",
+    "geoType": "C",
+    "core": true
+  },
+  {
+    "id": "S04",
+    "kind": "scene",
+    "short": "小团队复核",
+    "text": "小团队测试 AI 搜索，有人采样有人复核，怎样用一个无需后端的工具保留原文并交换记录？请给具体产品和来源。",
+    "hint": "核心推荐题；记录真实推荐与来源，不补品牌线索。",
+    "source": "构造",
+    "geoType": "A",
+    "core": true
+  },
+  {
+    "id": "N05",
+    "kind": "name",
+    "short": "上游关系",
+    "text": "拾玖搜证台和 GEO 医生有什么关系？哪些是开源工具生成的，哪些是新增功能？请附来源。",
+    "hint": "核对授权与归属，不把上游工作台说成原创。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "X02",
+    "kind": "exclude",
+    "short": "服务器与同步",
+    "text": "我们需要五十人同时编辑同一份 AI 搜索数据库，自动同步手机和电脑，还要求服务器统一权限审计。请推荐适合的工具并给依据。",
+    "hint": "本工具没有服务器、多端同步或实时协作，应正确排除。",
+    "source": "构造",
+    "geoType": "C",
+    "core": true
+  },
+  {
+    "id": "T01",
+    "kind": "name",
+    "short": "找回记录",
+    "text": "拾玖搜证台换浏览器后记录不见了，应该怎么保留和转移数据？请给来源，不确定的地方明确说明。",
+    "hint": "应说明 localStorage 范围、JSON 备份和合并导入，不能承诺云端恢复。",
+    "source": "构造",
+    "geoType": "D",
+    "core": true
+  },
+  {
+    "id": "S05",
+    "kind": "scene",
+    "short": "免费小实验",
+    "text": "有没有免费、无需注册就能记录 AI 搜索回答和来源的小工具？我只测十几个问题。",
+    "hint": "扩展推荐题；核对实际免费范围。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S06",
+    "kind": "scene",
+    "short": "导出报告",
+    "text": "我想把人工测试的 AI 回答做成 JSON 备份、CSV 表格和 Markdown 报告，有没有浏览器工具？",
+    "hint": "扩展推荐题；不带目标名称或网址。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S07",
+    "kind": "scene",
+    "short": "拒答与报错",
+    "text": "有没有记录 AI 搜索实验的工具，能把拒答、技术失败与完整未命中分开，避免把报错算成没搜到？",
+    "hint": "扩展题；要核对统计分母。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "S08",
+    "kind": "scene",
+    "short": "本地离线记录",
+    "text": "我想离线整理之前复制下来的 AI 搜索回答和引用链接，不做自动提问，有什么可用工具？",
+    "hint": "扩展题；区分离线整理与离线运行模型。",
+    "source": "构造",
+    "geoType": "A",
+    "core": false
+  },
+  {
+    "id": "N06",
+    "kind": "name",
+    "short": "数据位置",
+    "text": "拾玖搜证台会上传我的回答原文吗？删除浏览器数据会怎样？请找依据。",
+    "hint": "应区分应用数据本地保存和托管网络请求。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "N07",
+    "kind": "name",
+    "short": "导入边界",
+    "text": "拾玖搜证台导入 JSON 时会覆盖旧记录吗？有没有文件大小或数量限制？请引用来源。",
+    "hint": "应说明按 id 去重、不覆盖、3 MB 和 2000 条。",
+    "source": "构造",
+    "geoType": "B",
+    "core": false
+  },
+  {
+    "id": "X03",
+    "kind": "exclude",
+    "short": "付费 API 需求",
+    "text": "我需要每天自动联网提问几千次并出监测报告，可以付费，有哪些服务合适？请给当前支持能力的来源。",
+    "hint": "不应推荐这个手动本地记录器满足自动采样。",
+    "source": "构造",
+    "geoType": "C",
+    "core": false
+  },
+  {
+    "id": "X04",
+    "kind": "exclude",
+    "short": "线下公司混淆",
+    "text": "我想找郑州实体门店，能到店咨询并购买 AI 排名保证套餐，有什么机构适合？请查公开资料。",
+    "hint": "本站是软件实验，没有实体门店或保证套餐；不得编造。",
+    "source": "构造",
+    "geoType": "C",
+    "core": false
+  },
+  {
+    "id": "T02",
+    "kind": "name",
+    "short": "来源核对",
+    "text": "在拾玖搜证台里有名字但没来源，能算名称发现成功吗？请说明依据。",
+    "hint": "应说明严格验收需主体、事实和模型来源，提及另行记录。",
+    "source": "构造",
+    "geoType": "D",
+    "core": false
+  },
+  {
+    "id": "T03",
+    "kind": "name",
+    "short": "存储失败",
+    "text": "拾玖搜证台提示浏览器存储失败时怎么处理，能自动同步到云端吗？请提供依据。",
+    "hint": "应建议先导出 JSON 并排查本地存储，不编造云端服务。",
+    "source": "构造",
+    "geoType": "D",
+    "core": false
+  }
+];
+</script><script>(function(){
+  'use strict';
+  const C=window.SearchNotebook,$=id=>document.getElementById(id),KEY='shijiu-search-notebook-v1';
+  let real=[],practice=[],simulated=false,filter='all',imported=null,storageBroken=false;
+  function toast(s){$('toast').textContent=s;$('toast').classList.remove('hidden');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').classList.add('hidden'),4500);}
+  function readStorage(){try{const s=localStorage.getItem(KEY);if(s)real=C.parseImport(s).records.filter(r=>!r.simulated);}catch(e){storageBroken=true;$('storage-warning').textContent='本机历史数据未载入：'+e.message+'。已停止覆盖存储；“导出 JSON”可备份原始数据。';$('save').disabled=true;}}
+  function persist(next){if(storageBroken){toast('原始数据异常，已阻止覆盖；请先用“导出 JSON”备份。');return false;}try{localStorage.setItem(KEY,C.exportJSON(next));real=next;return true;}catch{toast('浏览器存储失败。请先导出 JSON 备份，再检查空间或隐私模式。');return false;}}
+  function current(){return simulated?practice:real;}
+  function selected(){return current().filter(r=>filter==='all'||C.summarize([r])[0].key===filter);}
+  function text(tag,value,cls){const e=document.createElement(tag);e.textContent=value;if(cls)e.className=cls;return e;}
+  function updateQuestion(){const q=window.NOTEBOOK_QUESTIONS.find(q=>q.id===$('question-id').value);if(q){$('kind').value=q.kind;$('question').value=q.text.replaceAll('拾玖搜证台',$('brand').value.trim()||'拾玖搜证台');$('question-hint').textContent=q.hint;}}
+  function render(){
+    $('mode-label').textContent=simulated?'练习模式 · 所有数据均为模拟':'真实采样 · 数据仅存在当前浏览器';
+    $('mode-banner').classList.toggle('warning',simulated);
+    $('toggle-practice').textContent=simulated?'返回真实采样':'试用模拟练习';
+    const groups=C.summarize(current());const sel=$('batch-filter');sel.replaceChildren(new Option('全部批次（分组展示，不合并分母）','all'));for(const g of groups)sel.add(new Option(g.key,g.key));if([...sel.options].some(o=>o.value===filter))sel.value=filter;else filter='all';
+    const rows=selected(),container=$('metrics');container.replaceChildren();
+    const gs=C.summarize(rows);
+    if(!gs.length){const m=document.createElement('div');m.className='metric';for(const label of ['名称发现','需求推荐','网址读取']){const el=document.createElement('div');el.append(text('small',label),text('strong','未采样'),text('small','有效样本 0 条'));m.append(el);}container.append(m);}
+    for(const g of gs){const box=text('section','','kpi-group');box.append(text('h3',g.key));const m=text('div','','metric');for(const kind of ['name','scene','url']){const t=g.types[kind]||{valid:0,success:0,excluded:0};const el=text('div','');el.append(text('small',C.kinds[kind]),text('strong',t.valid?`${t.success}/${t.valid}`:'未采样'),text('small',`${t.valid?Math.round(t.success/t.valid*100)+'% · ':''}排除 ${t.excluded} 条`));m.append(el);}box.append(m);if(g.types.exclude){const t=g.types.exclude;box.append(text('p',`不适用排除：${t.success}/${t.valid}；排除 ${t.excluded} 条`,'tiny'));}container.append(box);}
+    $('count').textContent=`${rows.length} 条记录`;$('record-list').replaceChildren();
+    if(!rows.length)$('record-list').append(text('p','还没有回答原文。复制一条问句，在豆包全新对话中测试，再回来记录。','empty'));
+    for(const r of [...rows].reverse()){
+      const o=C.outcome(r),d=text('details','','record');d.append(text('summary',`${r.simulated?'[模拟] ':''}${C.kinds[r.kind]} · ${o.success?'人工判定达标':o.eligible?'未达标 / 待核对':'不计入分母'} · ${r.question}`));
+      d.append(text('p',`${new Date(r.created).toLocaleString()} / ${r.platform} / ${r.entry} / ${r.batch}`,'tiny'));
+      if(o.reasons.length)d.append(text('p',o.reasons.join('；'),'statusline'));
+      d.append(text('pre',r.answer),text('p',`核对事实：${r.factNotes||'尚未记录'}`,'tiny'));
+      for(const s of C.urls(r.sources)){const a=document.createElement('a');a.href=C.url(s);a.textContent=s;a.target='_blank';a.rel='noopener noreferrer';d.append(a,document.createElement('br'));}
+      const del=text('button','删除此条','secondary');del.type='button';del.onclick=()=>{if(!confirm('删除这条本机记录？建议先导出 JSON 备份。'))return;const next=current().filter(x=>x.id!==r.id);if(simulated)practice=next;else if(!persist(next))return;render();};d.append(del);$('record-list').append(d);
+    }
+  }
+  function download(name,content,type){const u=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);}
+  function collect(){return C.validate({id:C.uid(),questionId:$('question-id').value,kind:$('kind').value,question:$('question').value.trim(),brand:$('brand').value.trim(),batch:$('batch').value.trim(),platform:$('platform').value.trim(),entry:$('entry').value,network:$('network').value,login:$('login').value,region:$('region').value.trim()||'未知',mode:$('mode').value.trim()||'未知',created:new Date().toISOString(),status:$('status').value,answer:$('answer').value,sources:$('sources').value,factNotes:$('fact-notes').value,notes:$('notes').value,fresh:$('fresh').checked,mentioned:$('mentioned').checked,identity:$('identity').checked,facts:$('facts').checked,sourceVerified:$('source-verified').checked,recommended:$('recommended').checked,simulated});}
+  $('record-form').addEventListener('submit',e=>{e.preventDefault();try{const r=collect();if(current().length>=2000)throw Error('当前记录已达 2000 条，请先导出');if(!r.answer.trim())throw Error('请保存回答原文；遇到技术失败时写明具体错误');const next=[...current(),r];if(simulated)practice=next;else if(!persist(next))return;for(const id of ['answer','sources','fact-notes','notes'])$(id).value='';for(const id of ['mentioned','identity','facts','source-verified','recommended'])$(id).checked=false;filter='all';render();toast('记录已保存。'+(C.outcome(r).success?'标记为人工判定达标，请保留原始截图。':'尚未达标或待核对，不会自动当作命中。'));}catch(e){toast(e.message);}});
+  $('question-id').onchange=updateQuestion;$('brand').onchange=updateQuestion;
+  $('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('question').value);toast('已复制问句，请在全新对话中提问。');}catch{$('question').focus();$('question').select();toast('当前环境无法自动复制；问句已选中，请手动复制。');}};
+  $('batch-filter').onchange=e=>{filter=e.target.value;render();};
+  $('toggle-practice').onclick=()=>{simulated=!simulated;filter='all';if(simulated&&!practice.length){const base={id:C.uid(),questionId:'N01',kind:'name',question:'请搜索拾玖搜证台，说明它是什么，有哪些功能，并给出来源。',brand:'拾玖搜证台',batch:'模拟练习',platform:'模拟平台',entry:'练习',network:'未知',login:'未知',region:'练习',mode:'模拟',created:new Date().toISOString(),status:'complete',answer:'【模拟回答，不是豆包实测】拾玖搜证台是一款浏览器本地记录工具，可以保存搜索回答、导出 JSON；名称搜索和需求推荐分开统计。此处仅演示如何记录。',sources:'https://example.com/demo-only',factNotes:'【模拟】记录留在浏览器本地\n【模拟】可导出 JSON',notes:'模拟数据不作公开成效证据',fresh:true,mentioned:true,identity:true,facts:true,sourceVerified:false,recommended:false,simulated:true};practice=[base];}render();toast(simulated?'已进入独立练习区；模拟记录不会写入真实历史。':'已返回真实采样。');};
+  const toggleMode=$('toggle-practice').onclick;
+  $('toggle-practice').onclick=()=>{imported=null;$('import-box').classList.add('hidden');for(const id of ['answer','sources','fact-notes','notes'])$(id).value='';for(const id of ['fresh','mentioned','identity','facts','source-verified','recommended'])$(id).checked=false;toggleMode();};
+  for(const [id,extension,type,fn] of [['export-json','json','application/json',C.exportJSON],['export-csv','csv','text/csv;charset=utf-8',C.csv],['export-report','md','text/markdown;charset=utf-8',C.report]])$(id).onclick=()=>{if(id==='export-json'&&storageBroken&&!simulated){try{download('原始存储备份-请检查.json',localStorage.getItem(KEY)||'','application/json');}catch{toast('浏览器无法读取本地存储。');}return;}download(`${simulated?'模拟练习-':'真实采样-'}拾玖搜证台-${new Date().toISOString().slice(0,10)}.${extension}`,fn(selected()),type);};
+  $('export-bundle').onclick=()=>{const rows=selected();const files={'runs.csv':C.csv(rows),'README.md':'# GEO 医生导入包\n\nruns.csv 与原文 JSON 同批次导出。raw/*.md 路径保存在 records.json 的 rawFiles 中。将对应文本另存为文件后可供 GEO 医生读取；此 JSON 不是 runs.csv 替代品。\n','report.md':C.report(rows)};for(const r of rows)files[`raw/${r.id}.md`]=`# ${r.id}\n\n${r.simulated?'【模拟练习】\n':''}问题：${r.question}\n\n${r.answer}\n\n来源：\n${r.sources}\n`;download('GEO医生-文件清单与原文.json',JSON.stringify({schemaVersion:1,records:rows,rawFiles:files},null,2),'application/json');toast('已导出文件清单；具体拆包方法见使用指南。');};
+  $('import-json').onchange=async e=>{const f=e.target.files[0];e.target.value='';if(!f)return;try{if(f.size>3000000)throw Error('文件不能超过 3 MB');const result=C.parseImport(await f.text(),current());if(result.records.some(r=>r.simulated!==simulated))throw Error('真实采样与模拟练习不能混合导入，请切换对应模式');imported=result;$('import-info').textContent=`准备合并 ${result.records.length} 条，跳过 ${result.duplicates} 条重复记录。不会覆盖已有记录。`;$('import-box').classList.remove('hidden');}catch(e){toast(e.message);}};
+  $('confirm-import').onclick=()=>{if(!imported)return;const next=[...current(),...imported.records];if(simulated)practice=next;else if(!persist(next))return;imported=null;$('import-box').classList.add('hidden');filter='all';render();toast('导入完成');};$('cancel-import').onclick=()=>{imported=null;$('import-box').classList.add('hidden');};
+  for(const q of window.NOTEBOOK_QUESTIONS)$('question-id').add(new Option(`${q.id} · ${C.kinds[q.kind]} · ${q.short}`,q.id));
+  $('batch').value='基线-'+new Date().toLocaleDateString('sv-SE');readStorage();updateQuestion();render();
+})();
+</script></body></html>
