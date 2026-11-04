@@ -6,5 +6,7 @@
 - [真实可用记录器](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html)
 - [已确认事实](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/)
 - [实验指南](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html)
-- [核验状态：尚无豆包独立发现实测](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/evidence.html)
+- [实测现状：尚未独立发现](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/evidence.html)
 - [上游与许可](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/credits.html)
+
+- [手动保存和比较 AI 搜索测试结果的教程](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/manual-ai-search-log.html)
