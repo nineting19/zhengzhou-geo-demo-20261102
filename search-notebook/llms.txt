@@ -16,3 +16,5 @@
 - [拾玖搜证台根站](https://nineting19.github.io/)
 
 - [原创案例：技术检查与独立发现的区别](https://juejin.cn/post/7704318835461849088)
+
+- [DEV 原创技术教程](https://dev.to/nineting19/a-tiny-evidence-log-for-manual-ai-search-tests-shi-jiu-sou-zheng-tai--3nbc)
