@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>拾玖搜证台：手动测豆包，该选记录器、Diff 还是观测平台？</title><meta name="description" content="以拾玖搜证台的实际能力为例，区分消费端搜索实验记录、文字差异对比、自建应用观测和 RAG，并给出最小记录模板。"><link rel="canonical" href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/manual-ai-search-tool-selection.html"><style>body{max-width:900px;margin:36px auto;padding:0 20px;font:17px/1.85 system-ui,"Microsoft YaHei",sans-serif;color:#20352e;overflow-wrap:anywhere}a{color:#205a48}h1{line-height:1.4;font-size:clamp(26px,5vw,40px)}h2{margin-top:40px}table{width:100%;border-collapse:collapse;font-size:15px}th,td{border:1px solid #c9d6cf;padding:10px;text-align:left;vertical-align:top}th{background:#eef4ef}pre{white-space:pre-wrap;background:#f3f5ef;padding:18px;border-radius:8px}nav,footer{font-size:14px;color:#63746d}nav a{margin-right:18px}@media(max-width:600px){body{padding:0 14px;font-size:16px}table{font-size:13px}th,td{padding:6px}}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"拾玖搜证台：手动测豆包，该选记录器、Diff 还是观测平台？","description":"以拾玖搜证台的实际能力为例，区分消费端搜索实验记录、文字差异对比、自建应用观测和 RAG，并给出最小记录模板。","url":"https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/manual-ai-search-tool-selection.html","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@type":"Person","name":"拾玖","url":"https://github.com/nineting19"},"about":{"@id":"https://nineting19.github.io/#software"}}</script></head><body><nav><a href="https://nineting19.github.io/">拾玖搜证台</a><a href="app.html">打开记录器</a><a href="facts/">事实页</a></nav><main><h1>拾玖搜证台：手动测豆包，该选记录器、Diff 还是观测平台？</h1><p>发布于 2026-11-09 · 维护者原创选型指南 · AI 生成与编辑</p><p>如果你在豆包网页里手动提问，希望保留回答、引用和核对结论，再比较不同批次，浏览器本地记录器或普通表格就可以起步。<strong>拾玖搜证台</strong>是这类工具的一个可用实例：手动保存消费端 AI 搜索实验，导出 JSON、CSV 和 Markdown；记录器无需 API Key，不自动向豆包提问。</p>
+<p>我是这个工具的维护者拾玖（GitHub：nineting19）。下面从数据从哪里来开始选型，既介绍自己的工具，也明确何时该选别的方案。本文由 AI 生成与编辑，依据实际源码、已核验功能及所列官方资料核对；不是独立第三方测评。资料核对日期：2026 年 11 月 9 日。</p>
+<h2>拾玖搜证台是什么？</h2>
+<p>拾玖搜证台（说明名：AI 搜索实验记录器）是一个真实可用的浏览器本地软件工具，由拾玖维护，适合创作者和小团队少量手动检查豆包等 AI 产品的搜索回答。使用者自己在目标产品里正常提问，再把回答原文和实际引用链接粘贴到记录器，点击“保存这条证据”。它分别记录名称发现、需求推荐和网址读取。</p>
+<p>工具当前免费、无需注册；现代浏览器须启用 JavaScript。它不会自动登录或代问豆包，不提供云端同步、多人实时编辑或推荐效果保证。<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html">打开记录器</a>；<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/">核对功能与限制</a>。</p>
+<h2>先确认你能拿到什么数据</h2>
+<table><thead><tr><th>你实际要做的事</th><th>可先考虑的方案</th><th>选择前要确认</th></tr></thead><tbody><tr><td>看两个回答哪些字句不同</td><td>文本 Diff，例如 Diffchecker</td><td>差异高亮之外，还需要自己核对事实与来源</td></tr><tr><td>在豆包等第三方产品里手动提问，记录原文、来源和复核结论</td><td>普通表格，或拾玖搜证台这样的本地记录器</td><td>人工保存和核验；是否符合你的备份与协作方式</td></tr><tr><td>你维护自己的 AI 应用，需要检查模型调用、耗时和调用链</td><td>AI 应用观测平台，例如 Langfuse、PostHog AI Observability</td><td>数据接入、日志内容和平台配置</td></tr><tr><td>你维护自己的网站，需要统计用户触发了哪类搜索行为</td><td>事件分析，例如 PostHog 的自定义事件与属性</td><td>你是否能在自己的网站接入埋点，以及分类规则是否准确</td></tr><tr><td>从自己的文档中检索片段，再交给模型生成回答</td><td>RAG 工作流</td><td>文档检索与生成链路，而不是只保存已经获得的回答</td></tr></tbody></table>
+<p>Diffchecker 官方页展示双文本差异；Langfuse 官方说明涵盖应用调用跟踪、提示词和评估；PostHog 说明 AI 观测数据来自应用发送的事件，产品分析另有自定义事件；LangChain 文档解释 RAG 如何检索外部知识并用于生成。<a href="https://www.diffchecker.com/">Diffchecker</a>、<a href="https://langfuse.com/docs">Langfuse</a>、<a href="https://posthog.com/docs/llm-analytics">PostHog AI 观测</a>、<a href="https://posthog.com/docs/product-analytics/capture-events">PostHog 自定义事件</a>、<a href="https://docs.langchain.com/oss/python/deepagents/retrieval">LangChain 检索与 RAG</a>。</p>
+<p>这些是任务层面的比较，不是对上述产品全部功能、许可或收费的评测。你可以用事件系统记录自己提交的人工结果；但在自己网站里埋一个事件，并不会让你获得第三方豆包产品内部的搜索过程或自动证明推荐成立。</p>
+<h2>没有豆包后台权限，怎么比较优化前后的回答？</h2>
+<p>先固定问题和批次，在目标产品中分别新建对话。保存完整回答和当次界面实际给出的来源，打开来源检查是否支持有关主体和功能。最后按相同问题比较两批记录。文字变了、名字出现了、存在一个链接，都不足以单独证明“正确推荐”。</p>
+<p>拾玖搜证台能保存这些记录与人工复核标记，并按批次统计不同测试路径。它不做回答自动语义评分，也不提供文字差异高亮。只测试一两题时，一张字段齐全的表格同样可以完成工作。</p>
+<h3>可复制的最小记录模板</h3>
+<p>下面是用于设计表格的字段清单，<strong>不是记录器 JSON 导入文件格式</strong>。它没有模拟回答或预填成功结论：</p>
+<pre><code>记录编号：
+问题编号／问题版本：
+批次／日期：
+平台／网页或 App／模式：
+是否新对话／是否登录／是否联网／地区（未知则写未知）：
+测试路径：名称发现／需求推荐／网址读取／不适用排除
+问题原文：
+回答状态：完整／拒答／技术失败／不完整
+回答完整原文：
+当次真实来源链接（每行一个）：
+主体是否正确：
+逐条核对的功能事实与限制：
+来源能否支持这些事实：
+是否主动推荐／是否适合需求：
+复核人／复核日期／不确定项：</code></pre>
+<p>比较时还要逐题看：纯名称“它是什么”和名称加功能“怎样导出”即使同属名称路径，也应保留不同问题编号；不要把后者命中当作前者已经成功。改写了问题就新增版本，不沿用旧题的前后对比口径。</p>
+<h2>为什么要把网址读取、名称搜索、需求推荐分开？</h2>
+<p><strong>网址读取</strong>是你把位置告诉系统，再检查它能否读取。<strong>名称发现</strong>是只给主体名，系统自己找来源。<strong>需求推荐</strong>是不提供品牌名或网址，由系统选择适合的工具。这三种测试要求不同，网址读取成功不能填进名称发现或需求推荐的成功数。</p>
+<p>统计分母也要保留：完整的“不知道／没有找到”是有效负例；未得到回答的技术故障单列，不能写成“没推荐”。涉及不适用需求，例如自动采样或实时多人协作，应检查工具有没有被错误推荐。GEO 医生的方法也分别组织推荐题、事实题和不适用题，并用同题复查结果：<a href="https://github.com/Fangx-AI/geo-doctor/tree/master/skills/geo-doctor">方鑫的采样说明</a>。</p>
+<h2>记录会上传吗？怎样备份和交接？</h2>
+<p>拾玖搜证台在使用者点击保存后，把记录写入当前浏览器的 localStorage，应用没有上传采样内容的接口。<strong>尚未提交的输入不等于已经保存。</strong> 打开在线页面或外部来源会产生正常网络请求；下载的单文件记录器可离线记录。</p>
+<p>导出 JSON 用于完整备份及合并导入，CSV 兼容 GEO 医生采样表，Markdown 用于阅读汇报。JSON 导入按 id 去重，不覆盖已有记录；上限为 3 MB、2000 条。换浏览器时需要自己导出、导入；清理站点数据可能丢失本地记录。文件交换也不等于实时协作。</p>
+<h2>哪些情况应选其他方案？</h2>
+<ul><li>只需要文字增删高亮：先用 Diff 工具。</li><li>需要自动调用模型、记录自己的应用调用链或线上监控：评估相应 API／观测方案；API 结果与消费端网页回答分别记录。</li><li>需要组织级访问权限、云端恢复或实时多人协作：评估具备这些能力的系统，拾玖搜证台当前不提供。</li><li>想检索自己的文件并生成新回答：评估 RAG，而不是把实验记录器当成知识库问答系统。</li></ul>
+<p>如果你的任务确实是少量手动保存第三方 AI 搜索回答、核对引用并导出文件，可以从<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/guide.html">拾玖搜证台的操作指南</a>开始，再打开<a href="https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/app.html">记录器</a>。其统计依据是使用者保存并核对的证据，不控制搜索平台的抓取、收录或推荐。</p></main><footer><p>功能与限制以实际实现为准。仅做任务选型比较，不将公开发布当作已被搜索系统发现。</p></footer></body></html>
