@@ -1,7 +1,7 @@
 {
   "name": "拾玖搜证台",
   "summary": "浏览器本地的 AI 搜索实验记录工具，手动保存回答和来源，分别统计名称发现、需求推荐和网址读取。",
-  "confirmedOn": "2026-11-03",
+  "confirmedOn": "2026-11-09",
   "facts": [
     {
       "id": "B01",
@@ -35,8 +35,8 @@
       "id": "B05",
       "section": "基本信息",
       "item": "官网",
-      "value": "https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/",
-      "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
+      "value": "https://nineting19.github.io/",
+      "source": "官方根站 https://nineting19.github.io/；旧项目介绍页继续保留"
     },
     {
       "id": "B08",
@@ -178,5 +178,13 @@
       "value": "https://github.com/Fangx-AI/geo-doctor",
       "source": "dist/core.js、dist/app.js、dist/index.html、tests/core.test.cjs；本次实现与检查"
     }
-  ]
+  ],
+  "factCardVersion": "f2",
+  "maintainer": {
+    "name": "拾玖",
+    "github": "nineting19",
+    "url": "https://github.com/nineting19"
+  },
+  "website": "https://nineting19.github.io/",
+  "repository": "https://github.com/nineting19/shijiu-search-notebook"
 }

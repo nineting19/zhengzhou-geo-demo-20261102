@@ -4,7 +4,7 @@
 
 - 别名：AI 搜索实验记录器
 - 类型：软件工具实验，不是虚构公司或线下门店。
-- 官网：https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/
+- 官网：https://nineting19.github.io/
 - 当前版本：1.0
 - 需要少量手动验证 AI 搜索结果、保存原始证据的创作者与小团队。
 - 需要自动批量代问、多人实时协作、跨设备自动同步或效果保证的人。
@@ -35,6 +35,7 @@
 ## 文章
 
 - [豆包 API 回答，能代表豆包 App 搜索吗？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/api-vs-app.html): 为什么 API 采样和用户端联网搜索应当分别记录？
+- [拾玖搜证台：不用 API，记录和比较豆包搜索测试结果](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/manual-ai-search-log.html): 已实现的本地记录、来源核验、JSON 备份与 CSV 导出方法及真实实验边界。
 - [给网址能读取，为什么只给名字却搜不到？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/read-vs-discover.html): 给网址读取成功能否证明 AI 搜索已经发现项目？
 - [小团队怎样保留 AI 搜索实验原文与来源？](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/facts/articles/record-search-evidence.html): 不接付费 API，怎样做一轮可复核的小规模 AI 搜索实验？
 
