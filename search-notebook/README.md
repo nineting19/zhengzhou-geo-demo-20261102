@@ -35,3 +35,5 @@
 2026-11-09：N03 名称＋功能问句本日 3/3，累计同题 3/4；纯名称 N01 0/12；无品牌需求推荐 0/22。支持来源是维护者自己的 DEV 文章；只在具体问句范围内报告，不当作独立测评或稳定推荐概率。
 [具体问句与来源](https://nineting19.github.io/zhengzhou-geo-demo-20261102/search-notebook/evidence.html#discovery-20261109)
 <!-- /discovery-20261109 -->
+
+- [DEV 原创选型指南](https://dev.to/nineting19/shi-jiu-sou-zheng-tai-shou-dong-ce-dou-bao-gai-xuan-ji-lu-qi-diff-huan-shi-guan-ce-ping-tai--2nbc)：2026-11-09 20:37 公开；匿名、无 JavaScript 和全文核对通过；不是新增豆包命中证据。
